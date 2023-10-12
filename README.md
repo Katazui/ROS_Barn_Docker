@@ -119,11 +119,13 @@ Our Team Simulations to replicate results.
 
 Our team results
 
-Vanilla Jackal Results: https://youtu.be/09wVBX-gjHk
-Adjusted Jackal Results: https://youtu.be/umRLDLUrH78
+- Vanilla Jackal Results: https://youtu.be/09wVBX-gjHk
+- Adjusted Jackal Results: https://youtu.be/umRLDLUrH78
 
+```
     Vanilla Jackal: ~ 55 seconds
     Adjusted Jackal: ~14 seconds
+```
 
 ![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Info1.png?raw=true)
 
