@@ -141,5 +141,5 @@ Run Simulation
 
     python3 run.py --world_idx [number] --gui
 
-
+# Thank you!
 ![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Thanks.png?raw=true)
