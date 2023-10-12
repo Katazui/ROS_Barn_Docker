@@ -78,7 +78,8 @@ MAC: Run Docker with Display / Enter Container Shell
 
 # Edit Project
 
-Once inside docker container shell. Parameters for Move Base: https://github.com/Daffan/nav-competition-icra2022/tree/main/jackal_helper/configs/params
+Once inside docker container shell, you can start editing the jackal workspace. 
+Parameters for Move Base: https://github.com/Daffan/nav-competition-icra2022/tree/main/jackal_helper/configs/params
 
 Goto Parameter Folder (pwd: jackal_ws/)
 
@@ -99,7 +100,7 @@ Adjust base_local_planner_params.yaml (pwd: jackal_ws/)
 
     src/nav-competition-icra2022/jackal_helper/configs/params/base_local_planner_params.yaml
 
-Our Team Simulations to replicate results. 
+Our Team Simulations to replicate results, use this file: https://github.com/Katazui/ROS_Barn_Docker/blob/main/params/base_local_planner_params.yaml
 
     TrajectoryPlannerROS:
 
@@ -145,3 +146,4 @@ Run Simulation
 
 # Thank you!
 ![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Thanks.png?raw=true)
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Memebers.png?raw=true)
