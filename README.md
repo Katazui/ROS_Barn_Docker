@@ -37,7 +37,7 @@ MAC: Run Docker with Display / Enter Container Shell
 
 1A: Start xhost (Need xQuartz/x11)
     
-    ```xhost + 127.0.0.1```
+    xhost + 127.0.0.1
 
 
 2A: Enter docker container with xQuartz + LibGL
