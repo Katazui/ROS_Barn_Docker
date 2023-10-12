@@ -85,6 +85,23 @@ Edit File
 
     sudo nano [filename].yaml
 
+Our Team Simulations to replicate results. Adjust src/nav-competition-icra2022/jackal_helper/configs/params/base_local_planner_params.yaml
+
+    TrajectoryPlannerROS:
+
+      # Robot Configuration Parameters
+      acc_lim_x: 15.0
+      acc_lim_theta:  25.0
+    
+      max_vel_x: 10.0
+      min_vel_x: 0.1
+    
+      max_vel_theta: 3.57
+      min_vel_theta: -3.57
+      min_in_place_vel_theta: 0.314
+      
+      escape_vel: -1.0
+
 # Run Simulation
 
 Goto Simulation Folder
@@ -94,4 +111,6 @@ Goto Simulation Folder
 Run Simulation
 
     python3 run.py --world_idx [number] --gui
+
+
 
