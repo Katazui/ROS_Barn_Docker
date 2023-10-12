@@ -125,7 +125,7 @@ Adjusted Jackal Results: https://youtu.be/umRLDLUrH78
     Vanilla Jackal: ~ 55 seconds
     Adjusted Jackal: ~14 seconds
 
-![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Title.png?raw=true)
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Info1.png?raw=true)
 
 # Run Simulation
 
