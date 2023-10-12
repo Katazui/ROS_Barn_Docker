@@ -2,7 +2,7 @@
 
 This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (gazebo) requires a Windows with NVIDA. The GUI will not work on Linux/Mac, but the project files will still run
 ![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Title.png?raw=true)
-![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Members.png?raw=true)
+
 ## Prerequisites
 
 1. Docker Desktop
