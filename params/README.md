@@ -58,3 +58,5 @@ Our team results
 ```
 
 ![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Info1.png?raw=true)
+
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Milestones.png?raw=true)
