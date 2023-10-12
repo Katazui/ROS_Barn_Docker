@@ -1,12 +1,15 @@
 # Running BARN Project with Docker
 
 This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (gazebo) requires a Windows with NVIDA. The GUI will not work on Linux/Mac, but the project files will still run
-
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Title.png?raw=true)
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Members.png?raw=true)
 ## Prerequisites
 
 1. Docker Desktop
 2. VCXSRV: https://sourceforge.net/projects/vcxsrv/ (For Gui, Windows ONLY)
 3. NVIDA
+
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Milestones.png?raw=true)
 
 # Starting Project
 
@@ -122,6 +125,8 @@ Adjusted Jackal Results: https://youtu.be/umRLDLUrH78
     Vanilla Jackal: ~ 55 seconds
     Adjusted Jackal: ~14 seconds
 
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Title.png?raw=true)
+
 # Run Simulation
 
 Setup Source (pwd: jackal_ws/)
@@ -137,4 +142,4 @@ Run Simulation
     python3 run.py --world_idx [number] --gui
 
 
-
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Thanks.png?raw=true)
