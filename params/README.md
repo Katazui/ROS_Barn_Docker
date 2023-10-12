@@ -57,3 +57,4 @@ Our team results
     Adjusted Jackal: ~14 seconds
 ```
 
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Info1.png?raw=true)
