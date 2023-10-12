@@ -1,4 +1,4 @@
-# Running BARN Project with Docker (No GUI)
+# Running BARN Project with Docker
 
 This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (gazebo) requires a Windows with NVIDA. The GUI will not work on Linux/Mac, but the project files will still run
 
@@ -12,66 +12,62 @@ This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (ga
 
 ## Copy Project to Folder
 
-    ```
     Project
       |___Dockerfile
       |___README.md
-    ```
+
 
 ## Build
 
-    ```docker build -t barn_ros_noetic .```
+    docker build -t barn_ros_noetic .
 
 ## Run
 
-    ```docker run -it barn_ros_noetic```
+    docker run -it barn_ros_noetic
 
 ## WINDOWS: Run Docker with Display and Enter Container Shell
 
-    ```
     docker run -it -e DISPLAY=host.docker.internal:0.0 barn_ros_noetic /bin/bash
-    ```
 
 ## MAC: Run Docker with Display / Enter Container Shell
 
-    # V1
-
-    Start xhost (Need xQuartz/x11)
+1A: Start xhost (Need xQuartz/x11)
+    
     ```xhost + 127.0.0.1```
 
-    Enter docker container with xQuartz + LibGL
-    ```
+
+2A: Enter docker container with xQuartz + LibGL
+
     docker run -it \
     -e DISPLAY=host.docker.internal:0.0 \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v /usr/lib/x86_64-linux-gnu/libGL.so.1:/usr/lib/x86_64-linux-gnu/libGL.so.1 \
     barn_ros_noetic \
     /bin/bash
-    ```
 
-    # V2
+[OR]
 
-    Enter docker container
-    ```
+1B: Enter docker container
+
     docker run -it \
     -e DISPLAY=host.docker.internal:0 \
     barn_ros_noetic \
     /bin/bash
-    ```
 
-    # V3
+[OR]
 
-    Start xhost (Need xQuartz/x11)
-    ```xhost + 127.0.0.1```
+1C: Start xhost (Need xQuartz/x11)
 
-    Enter docker container with xQuartz
-    ```
+    xhost + 127.0.0.1
+
+2C: 1Enter docker container with xQuartz
+
     docker run -it \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     barn_ros_noetic \
     /bin/bash
-    ```
+
 
 ## Once Inside Docker Container Shell
 
