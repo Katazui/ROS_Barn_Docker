@@ -4,32 +4,36 @@ This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (ga
 
 ## Prequesites
 
-    1. Docker Desktop
-    2. VCXSRV: https://sourceforge.net/projects/vcxsrv/ (For Gui, Windows ONLY)
-    3. NVIDA
+1. Docker Desktop
+2. VCXSRV: https://sourceforge.net/projects/vcxsrv/ (For Gui, Windows ONLY)
+3. NVIDA
 
 # Starting Project
 
-## Copy Project to Folder
+Copy Project to Folder
 
     Project
       |___Dockerfile
       |___README.md
 
 
-## Build
+Build
 
     docker build -t barn_ros_noetic .
 
-## Run
+Run
 
     docker run -it barn_ros_noetic
 
-## WINDOWS: Run Docker with Display and Enter Container Shell
+# Entering Docker Container Shell
+
+WINDOWS: Run Docker with Display and Enter Container Shell
 
     docker run -it -e DISPLAY=host.docker.internal:0.0 barn_ros_noetic /bin/bash
 
-## MAC: Run Docker with Display / Enter Container Shell
+[OR]
+
+MAC: Run Docker with Display / Enter Container Shell
 
 1A: Start xhost (Need xQuartz/x11)
     
@@ -69,17 +73,25 @@ This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (ga
     /bin/bash
 
 
-## Once Inside Docker Container Shell
+# Edit Project
 
-    To edit parameters for move_base (https://github.com/Daffan/nav-competition-icra2022/tree/main/jackal_helper/configs/params)
-    ```
+Parameters for Move Base: https://github.com/Daffan/nav-competition-icra2022/tree/main/jackal_helper/configs/params
+
+Goto Parameter Folder
+
     cd src/nav-competition-icra2022/jackal_helper/configs/params/
-    ```
 
-    To Run Simulation
-    ```
+Edit File
+
+    sudo nano [filename].yaml
+
+# Run Simulation
+
+Goto Simulation Folder
+
     cd src/nav-competition-icra2022/
-    ```
-    ```
+
+Run Simulation
+
     python3 run.py --world_idx [number] --gui
-    ```
+
