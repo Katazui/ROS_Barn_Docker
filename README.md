@@ -146,4 +146,4 @@ Run Simulation
 
 # Thank you!
 ![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Thanks.png?raw=true)
-![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Memebers.png?raw=true)
+![alt text](https://github.com/katazui/ROS_Barn_Docker/blob/main/images/Members.png?raw=true)
