@@ -2,7 +2,7 @@
 
 This project runs the BARN project with Docker on Linux/Mac/Windows. The GUI (gazebo) requires a Windows with NVIDA. The GUI will not work on Linux/Mac, but the project files will still run
 
-## Prequesites
+## Prerequisites
 
 1. Docker Desktop
 2. VCXSRV: https://sourceforge.net/projects/vcxsrv/ (For Gui, Windows ONLY)
@@ -75,34 +75,55 @@ MAC: Run Docker with Display / Enter Container Shell
 
 # Edit Project
 
-Parameters for Move Base: https://github.com/Daffan/nav-competition-icra2022/tree/main/jackal_helper/configs/params
+Once inside docker container shell. Parameters for Move Base: https://github.com/Daffan/nav-competition-icra2022/tree/main/jackal_helper/configs/params
 
-Goto Parameter Folder
+Goto Parameter Folder (pwd: jackal_ws/)
 
     cd src/nav-competition-icra2022/jackal_helper/configs/params/
+
+Install nano, if you haven't already
+
+    sudo apt install nano
 
 Edit File
 
     sudo nano [filename].yaml
 
-Our Team Simulations to replicate results. Adjust src/nav-competition-icra2022/jackal_helper/configs/params/base_local_planner_params.yaml
+
+# Replicating Team Results
+
+Adjust base_local_planner_params.yaml (pwd: jackal_ws/)
+
+    src/nav-competition-icra2022/jackal_helper/configs/params/base_local_planner_params.yaml
+
+Our Team Simulations to replicate results. 
 
     TrajectoryPlannerROS:
 
       # Robot Configuration Parameters
-      acc_lim_x: 15.0
-      acc_lim_theta:  25.0
+      acc_lim_x: 10.0
+      acc_lim_theta:  20.0
     
-      max_vel_x: 10.0
+      max_vel_x: 5.37
       min_vel_x: 0.1
     
       max_vel_theta: 3.57
       min_vel_theta: -3.57
       min_in_place_vel_theta: 0.314
-      
+    
+      holonomic_robot: false
       escape_vel: -1.0
 
+Our team results
+
+    Vanilla Jackal: ~ 55 seconds
+    Adjusted Jackal: ~14 seconds
+
 # Run Simulation
+
+Setup Source (pwd: jackal_ws/)
+
+    source devel/setup.bash
 
 Goto Simulation Folder
 
