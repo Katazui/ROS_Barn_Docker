@@ -43,4 +43,17 @@ To replicate, you need to adjust base_local_planner_params.yaml with our file (p
       holonomic_robot: false
       escape_vel: -1.0
   ```
-    
+
+# Team Results
+
+
+Our team results
+
+- Vanilla Jackal Results: https://youtu.be/09wVBX-gjHk
+- Adjusted Jackal Results: https://youtu.be/umRLDLUrH78
+
+```
+    Vanilla Jackal: ~ 55 seconds
+    Adjusted Jackal: ~14 seconds
+```
+
